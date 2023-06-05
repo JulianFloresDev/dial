@@ -1,8 +1,35 @@
+.blockContainer {
+  display: block;
+  width: 330px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.group {
+  display: flex;
+  width: 100%;
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+
+  transition: all .4s linear;
+}
+
+.group::-webkit-scrollbar {
+  display: none
+}
+
 .container {
   position: relative;
   z-index: 1000;
 
-  width: 100%;
+  scroll-snap-align: center;
+
+  flex-shrink: 0;
+  width: 330px;
   display: flex;
   align-items: center;
 }
@@ -71,5 +98,16 @@
   100% {
     scale: 1.1;
     opacity: 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .blockContainer {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .group {
+    overflow: initial;
   }
 }
