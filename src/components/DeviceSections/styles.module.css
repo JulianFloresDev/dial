@@ -35,7 +35,7 @@
 }
 
 .device {
-  clip-path: circle(0% at 50% 40%);
+  clip-path: circle(110%);
 
   transition: all .6s ease-in-out;
 }
@@ -45,7 +45,7 @@
 }
 
 .container:has(:checked) .device {
-  clip-path: circle(120%);
+  clip-path: circle(110%);
 }
 
 .container:has(:checked) .circle {
@@ -109,5 +109,9 @@
 
   .group {
     overflow: initial;
+  }
+
+  .device {
+    clip-path: circle(0% at 50% 40%);
   }
 }

@@ -29,8 +29,8 @@
   --color-blue: rgb(0, 145, 215);
 
   --text-color: var(--color-black);
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 245, 245, 245;
 }
 
 body {
